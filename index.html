@@ -976,18 +976,21 @@
 <!--Navigation Menu-->
 <script>
     function toggleMenu() {
-        const navLinks = document.getElementById('nav-links');
-        navLinks.classList.toggle('show-menu');
+        const navLinks = document.getElementById('navigation');
+        navLinks.classList.toggle('show-menu'); // Add/remove 'show-menu'
     }
-    // Close the menu after clicking an option
-    const navLinks = document.querySelectorAll('#nav-links a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            const nav = document.getElementById('nav-links');
-            nav.classList.remove('show-menu');
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const navLinks = document.querySelectorAll('.navigation a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                const nav = document.getElementById('navigation');
+                nav.classList.remove('show-menu'); // Remove 'show-menu' after clicking a link
+            });
         });
     });
 </script>
+
 
 
 

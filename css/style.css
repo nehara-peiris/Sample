@@ -9,14 +9,19 @@ body{
 
 /*--Navigation box--*/
 header{
+    background-color: black;
     width: 100%;
     height: 80px;
-    background-color: black;
 
     position: sticky;
     top: 0;
+    left: 0;
 
     z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*--Logo--*/
@@ -31,11 +36,11 @@ header>nav>a{
     text-decoration: none;
     color: white;
     font-family: "Francois One", sans-serif;
-
-    position: absolute;
-    top: 32px;
+    padding: 0 1rem;
 }
 
+/*neha*/
+/*
 header>nav>a:first-child{
     right: 790px
 }
@@ -62,7 +67,9 @@ header>nav>a:nth-child(8){
 }
 header>nav>a:nth-child(9){
     right: 20px;
-}
+}*/
+
+
 
 /*--Links Hover--*/
 nav a {
@@ -82,6 +89,7 @@ nav:hover a:not(:hover) {
 
 .menu-icon{
     display: none;
+    cursor: pointer;
 }
 
 /*---Responsive----*/
@@ -107,7 +115,7 @@ nav:hover a:not(:hover) {
         display: block;
     }
 
-    .show-menu {
+    nav.show-menu {
         display: flex !important; /* Show the menu when active */
         flex-direction: column;
     }
