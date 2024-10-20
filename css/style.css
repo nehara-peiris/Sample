@@ -311,7 +311,7 @@ nav:hover a:not(:hover) {
     width: 350px;
 
     position: relative;
-    top: 100px;
+    top: 20%;
     left: 100px;
 }
 
@@ -641,7 +641,7 @@ nav:hover a:not(:hover) {
 
 #galleryMain{
     position: relative;
-    height: 610px;
+    height: 100vh;
     background: black;
 
     z-index: 1;
@@ -735,33 +735,33 @@ nav:hover a:not(:hover) {
 /*-----------------------Education-----------------------*/
 
 #educationMain{
+
+}
+
+
+#educationSection {
     position: relative;
-    height: 1350px;
-
+    height: 60vh;
+    padding: 50px;
     z-index: 1;
-
-    background: linear-gradient(45deg,#01141C,#000000,#000000,#031C27);
+    background: linear-gradient(45deg, #01141C, #000000, #000000, #031C27);
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /*Topic*/
-#eduTopic{
+#eduTopic {
     font-size: 40px;
     color: #50DBEE ;
 
-    width: 500px;
-    height: 500px;
-
-    position: absolute;
-    left: 50px;
-    top: 30px;
 }
 
-#eduTopic>div{
+#eduTopic > div {
     font-family: 'Inter';
     font-weight: 600;
 }
 
-#eduTopic>div:nth-child(2){
+#eduTopic > div:nth-child(2) {
     margin-top: 10px;
     font-weight: 200;
     font-size: 13px;
@@ -771,107 +771,61 @@ nav:hover a:not(:hover) {
     text-align: left;
 }
 
-#eduTopic>img{
-    width: 400px;
-
-    position: absolute;
-    right: 90px;
-    opacity: 40%;
+#eduTopic > img {
+    width: 50%;
+    margin-top: 20px;
+    opacity: 0.4;
 }
 
 /*Boxes*/
-#eduBoxes{
-    position: relative;
-    color: white;
-
-    height: 500px;
-    width: 800px;
-
-    left: 500px;
-    top: 50px;
+#eduBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
-.eduBox{
-    width: 175px;
-    height: 200px;
+.eduBox {
+    flex: 1 1 calc(33.333% - 30px);
+    max-width: 250px;
+    max-height: 250px;
+    padding: 20px;
     background: #011D26;
     border: 2px solid #00FFFF;
-    border-radius: 30px;
-
-    align-items: center;
-    justify-content: center;
+    border-radius: 20px;
     text-align: center;
-
-    position: absolute;
-
+    transition: transform 0.3s;
 }
 
-.eduBox:hover{
-
+.eduBox:hover {
+    transform: scale(1.05);
 }
 
-#eduBoxes>div:first-child{
-    left: 75px;
-    top: 40px;
-}
-
-#eduBoxes>div:nth-child(2){
-    left: 310px;
-    top: 40px;
-}
-
-#eduBoxes>div:nth-child(3){
-    right: 75px;
-    top: 40px;
-}
-
-#eduBoxes>div:nth-child(4){
-    bottom: 30px;
-    left: 200px;
-}
-
-#eduBoxes>div:nth-child(5){
-    bottom: 30px;
-    right: 200px;
-}
-
-.eduBox>div:nth-child(2){
-    font-family: 'Inter';
-    font-weight: 600;
-}
-
-.eduBox>div:nth-child(3){
-    font-family: 'Inter';
-    font-weight: 200;
-}
-
-/*Boxes Icons*/
-.eduIcon{
+.eduIcon {
     width: 55px;
     height: 55px;
     background: #147955;
     border-radius: 10px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: 20px auto 0;
-
 }
 
-.eduIcon>img{
+.eduIcon > img {
     width: 40px;
 }
 
-.eduBox>div:nth-child(2){
+.eduBox > div:nth-child(2) {
     margin-top: 30px;
-    font-size: 26px;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.eduBox>div:nth-child(3){
+.eduBox > div:nth-child(3) {
     margin-top: 10px;
-    font-size: 13px;
+    font-size: 1rem;
+    font-weight: 200;
 }
 
 .eduBox:nth-child(1) .eduIcon {
@@ -885,6 +839,41 @@ nav:hover a:not(:hover) {
 .eduBox:nth-child(5) .eduIcon {
     background-color: #8C6C17;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .eduBox {
+        flex: 1 1 calc(50% - 30px);
+    }
+
+    #eduTopic {
+        font-size: 6vw;
+    }
+
+    #eduTopic > div:nth-child(2) {
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .eduBox {
+        flex: 1 1 100%;
+    }
+
+    #eduTopic {
+        font-size: 8vw;
+    }
+
+    #eduTopic > div:nth-child(2) {
+        width: 100%;
+    }
+
+    #eduTopic > img {
+        width: 80px;
+    }
+}
+
 
 
 /*----------------Achievements---------------------*/
