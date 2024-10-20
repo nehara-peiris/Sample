@@ -1,3 +1,5 @@
+
+
 *{
     font-family: "Francois One", sans-serif;
 }
@@ -42,31 +44,31 @@ header>nav>a{
 /*neha*/
 /*
 header>nav>a:first-child{
-    right: 790px
+right: 790px
 }
 header>nav>a:nth-child(2){
-    right: 705px;
+right: 705px;
 }
 header>nav>a:nth-child(3){
-    right: 605px;
+right: 605px;
 }
 header>nav>a:nth-child(4){
-    right: 530px;
+right: 530px;
 }
 header>nav>a:nth-child(5){
-    right: 410px;
+right: 410px;
 }
 header>nav>a:nth-child(6){
-    right: 320px;
+right: 320px;
 }
 header>nav>a:nth-child(7){
-    right: 225px;
+right: 225px;
 }
 header>nav>a:nth-child(8){
-    right: 110px;
+right: 110px;
 }
 header>nav>a:nth-child(9){
-    right: 20px;
+right: 20px;
 }*/
 
 
@@ -90,7 +92,6 @@ nav:hover a:not(:hover) {
 .menu-icon{
     display: none;
     cursor: pointer;
-    background: red;
 }
 
 /*---Responsive----*/
@@ -107,6 +108,7 @@ nav:hover a:not(:hover) {
     .menu-icon {
         display: block;
         position: absolute;
+        right: 50px;
     }
 
     nav a {
@@ -120,6 +122,7 @@ nav:hover a:not(:hover) {
         flex-direction: column;
     }
 }
+
 
 
 /*---------------------------- Paralax Scene ----------------------------*/

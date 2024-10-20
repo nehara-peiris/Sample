@@ -81,7 +81,7 @@
     </div>
 
     <!--Navigation Menu-->
-    <nav class="navigation">
+    <nav id="navigation">
         <a href="" class="nav-item">Home</a>
         <a href="" class="nav-item">Gallery</a>
         <a href="" class="nav-item">Education</a>
@@ -979,7 +979,7 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-        const navLinks = document.querySelectorAll('.navigation a');
+        const navLinks = document.querySelectorAll('#navigation a');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 const nav = document.getElementById('navigation');
@@ -987,6 +987,7 @@
             });
         });
     });
+
 </script>
 
 
