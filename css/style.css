@@ -90,6 +90,7 @@ nav:hover a:not(:hover) {
 .menu-icon{
     display: none;
     cursor: pointer;
+    background: red;
 }
 
 /*---Responsive----*/
@@ -106,7 +107,6 @@ nav:hover a:not(:hover) {
     .menu-icon {
         display: block;
         position: absolute;
-        right: 50px;
     }
 
     nav a {
